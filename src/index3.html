@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pocket Bookmark</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="p2.png" alt="p3">
+        <img src="p2.png" alt="p3">
+    </div>
+    <!-- Back button -->
+    <div class="back-button">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <h1>Weather Bookmark</h1>
+        <!-- Form to create a new collection -->
+        <form id="createForm">
+            <label for="collectionName">Add Title</label>
+            <input type="text" id="collectionName" name="collectionName">
+            <button type="submit">Create</button>
+        </form>
+        <!-- Container to display existing collections -->
+        <div id="collectionsContainer">
+            <!-- Collections will be dynamically populated here -->
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script src="lead.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = "index2.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pocket Search</title>
+    <link rel="stylesheet" type="text/css" href="index2.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="p1.png" alt="p3">
+        <img src="p1.png" alt="p3">
+    </div>
+    <div class="button-container">
+        <div class="back-button">
+            <button onclick="goBack()">Back</button>
+        </div>
+        <div class="more-button">
+            <button onclick="goToNextPage()">Bookmark</button>
+        </div>
+        <div class="p-button">
+            <button onclick="goToNextPage1()">PhotoSpot</button>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <h1 class="search-title">Search Your Weather</h1>
+        <input type="text" id="city_input" placeholder="Enter city">
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <div id="weather_info"></div>
+    
+    <script src="main.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+        function goToNextPage(){
+            window.location.href = "index3.html";
+        }
+        function goToNextPage1(){
+            window.location.href = "index4.html";
+        }      
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+body {
+    background-color: #4682B4; /* Darker blue sky color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.container {
+    text-align: center;
+    position: relative; /* Change position to relative */
+    padding-top: 60px; /* Adjust padding top to accommodate the fixed title */
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: fixed; /* Make the title fixed */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); /* Center the title horizontally */
+    width: 100%; /* Make the title span the entire width */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 10px 0; /* Add padding for better visibility */
+    z-index: 1000; /* Ensure title is above other content */
+}
+
+.weather-condition {
+    margin-bottom: 40px;
+}
+
+.weather-condition h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Adjust margin top to create space below the fixed title */
+}
+
+.image-container img {
+    width: 300px; /* Adjust image width as needed */
+    margin: 0 10px; /* Adjust margin between images */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+
+.back-button {
+    z-index: 1001; /* Ensure the back button is above other content */
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FFD700; /* Yellow button color */
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #FFA500; /* Yellow button hover color */
+    transform: translateY(-2px); /* Move button up slightly on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Change shadow on hover */
+}

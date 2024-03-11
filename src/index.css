@@ -1,0 +1,57 @@
+body {
+  background-color: #4682B4; /* Blue sky color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable scrolling */
+}
+
+.intro-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.intro-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply a subtle shadow effect */
+}
+
+
+.intro-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold; /* Make the button text bold */
+  background-color: #FFD700; 
+  border: none;
+  border-radius: 20px; /* Make the button corners rounded */
+  cursor: pointer;
+}
+
+.intro-button:hover {
+  background-color: #FFA500; 
+}
+
+
+#city_input, button {
+  display: block;
+  margin: 20px auto;
+}
+
+#weather_info {
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  text-align: center; 
+  margin-top: 100px; /* Adjust the top margin to create space between images and intro container */
+  width: 100%; 
+  position: absolute; /* Position the image container */
+  top: 0; 
+  left: 0; 
+}
